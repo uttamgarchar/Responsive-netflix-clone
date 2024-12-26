@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("../images/bgpic.jpg");
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    height: 644px;
+    position: relative;
+
+}
+
+.main .shdowbox {
+    height: 644px;
+    width: 100vw;
+    opacity: 0.69;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+nav {
+    max-width: 60vw;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+.main .logo img {
+    width: 114px;
+    position: relative;
+    z-index: 10;
+
+}
+
+.rightnav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.langselectbox {
+    background-color: transparent;
+    border: none;
+    color: white;
+    width: 80px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 2px 2px 2px 2px;
+    border: none;
+    cursor: pointer;
+}
+
+option {
+    font-weight: normal;
+    display: block;
+    padding-block-start: 0px;
+    padding-block-end: 1px;
+    min-block-size: 1.2em;
+    padding-inline: 2px;
+    white-space: nowrap;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    z-index: 10;
+    border: 1px solid rgb(253, 253, 253);
+}
+
+.languagebox {
+    border: 1.25px solid rgb(179, 168, 168);
+    border-radius: 5%;
+    padding: 2px 2px 2px 2px;
+    z-index: 10;
+}
+
+.signinbutton {
+    background-color: red;
+    border: none;
+    color: white;
+    width: 90px;
+    height: 35px;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 2px 2px 2px 2px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.textarea1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    height: calc(70% - 206px);
+    gap: 15px;
+    margin-top: 5%;
+}
+
+.textarea1> :nth-child(1) {
+    font-size: 56px;
+    font-weight: 900;
+}
+
+.textarea1> :nth-child(2) {
+    font-size: 56px;
+    font-weight: 900;
+}
+
+.textarea1> :nth-child(3) {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.textarea1> :nth-child(4) {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.inputemail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    height: 70px;
+    position: relative;
+    top: 30px;
+}
+
+.inputtextemail input {
+    height: 50px;
+    width: 400px;
+    background-color: rgb(23, 23, 23, 0.4);
+    color: white;
+    border-radius: 5px;
+    border-color: white;
+    padding: 0px 0px 0px 20px;
+}
+
+.getstartedbutton button {
+    height: 50px;
+    width: 200px;
+    font-size: 24px;
+    background-color: rgb(197, 21, 21);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.saprater {
+    height: 6px;
+    background-color: rgb(46, 44, 44);
+    position: relative;
+}
+
+.fullmid {
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 70vw;
+}
+
+.fullmid h2 {
+    font-size: 48px;
+    font-weight: bolder;
+
+}
+
+.fullmid h3 {
+    font-size: 24px;
+}
+
+.right12 {
+    position: relative;
+}
+
+.fullmid img {
+    position: relative;
+    z-index: 10;
+    width: 555px;
+}
+
+.fullmid video {
+    position: absolute;
+    width: 500px;
+    top: 50px;
+    right: 1px;
+}
+
+.left11,
+.left22 {
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+}
+
+.faq {
+    color: white;
+    padding: 34px;
+
+}
+
+.faqbox {
+    transition: all 1s ease-out;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    padding: 24px;
+    max-width: 60vw;
+    margin: 34px auto;
+    cursor: pointer;
+}
+
+.faq :hover {
+    color: white;
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 48px;
+}
+
+footer {
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 60px;
+}
+
+footer .questions {
+    padding: 34px 0;
+}
+
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+
+.footer a {
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+@media screen and (max-width: 1300px) {
+    nav {
+        max-width: 90vw;
+    }
+
+    .fullmid {
+        flex-wrap: wrap;
+    }
+
+    .left21 img {
+        width: 305px;
+    }
+
+    .right12 img {
+        width: 305px;
+    }
+
+    .right12 video {
+        width: 300px;
+    }
+
+    .textarea1> :nth-child(1) {
+        font-size: 25px;
+    }
+
+    .textarea1> :nth-child(2) {
+        font-size: 25px;
+    }
+
+    .textarea1> :nth-child(3) {
+        font-size: 10px;
+    }
+
+    .textarea1> :nth-child(4) {
+        font-size: 10px;
+    }
+    .fullmid h2{
+        font-size: 20px;
+        text-align: center;
+        padding: 10px;
+    }
+    .fullmid h3{
+        font-size: 15px;
+        text-align: center;
+    }
+    .inputemail {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .faq h2 {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    footer {
+        max-width: 90vw;
+        padding: 75px 0;
+    }
+
+    .footer-item {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+}
